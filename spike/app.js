@@ -1,0 +1,1 @@
+var chirpApp = angular.module('chirpApp', []);
