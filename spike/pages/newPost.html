@@ -1,4 +1,8 @@
-<form class="form-inline">
-    <input type="text" class="form-control" placeholder="newPost">
-    <a class="btn btn-primary" href="#/">Send</a>
+<form class="span9">
+    <textarea class="form-control" rows="3" placeholder="New post" ng-model="newPost"></textarea>
+    <br>
+    <div ng-controller="newPostController">
+        <button class="btn btn-primary" ng-click="writeNewPost(newPost)">Send</button>
+    </div>
+
 </form>
