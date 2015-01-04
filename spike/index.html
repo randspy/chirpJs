@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 
     <script src="//code.angularjs.org/1.3.8/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.3.8/angular-route.min.js"></script>
     <script src="app.js"></script>
 </head>
 <body>
@@ -18,7 +19,6 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="/">Twitter simulator</a>
             </div>
-
             <ul class="nav navbar-nav navbar-right">
             </ul>
         </div>
@@ -32,24 +32,11 @@
     </form>
     <hr />
     <form class="form-inline">
-        <button type="submit" class="btn btn-primary">Posts</button>
-        <button type="submit" class="btn btn-default">Wall</button>
+        <a class="btn btn-primary" href="#/post">Posts</a>
+        <a class="btn btn-primary" href="#/wall">Wall</a>
     </form>
     <p/>
-    <ul class="list-group">
-    	<li class="list-group-item">
-            <div><strong>User - 11/11/2011 00:00:00</strong></div>
-            <div>Content</div>
-        </li>
-    	<li class="list-group-item">
-            <div><strong>User - 11/11/2011 00:00:00</strong></div>
-            <div>Content</div>
-        </li>
-    	<li class="list-group-item">
-            <div><strong>User - 11/11/2011 00:00:00</strong></div>
-            <div>Content</div>
-        </li>
-    </ul>
+    <div ng-view></div>
 </div>
 
 </body>
